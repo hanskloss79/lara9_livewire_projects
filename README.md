@@ -1,4 +1,4 @@
-# 6 livewire project from The Codeholic's tutorial "5 Laravel Livewire Projects For Beginners"
+# 6 livewire project from TheCodeholic's tutorial "5 Laravel Livewire Projects For Beginners"
 
 # Instead of Tailwind CSS framework Bootstrap 5.2 framework have been used.
 ### Only needed selectors and classes incorporated into app.css from original bootstrap css file.

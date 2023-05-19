@@ -386,7 +386,7 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
     <!-- Livewire styles -->
-    @livewireStyles
+    <livewire:styles />
 
     <style>
         body {
@@ -396,9 +396,28 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item {{ (request()->routeIs('counter')) ? 'bg-dark' : '' }}">
+                        <a class="nav-link {{ (request()->routeIs('counter')) ? 'active' : '' }}" aria-current="counter"
+                            href="/">Counter</a>
+                    </li>
+                    <li class="nav-item {{ (request()->routeIs('calculator')) ? 'bg-dark' : '' }}">
+                        <a class="nav-link {{ (request()->routeIs('calculator')) ? 'active' : '' }}"
+                            href="/calculator">Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
     {{ $slot }}
 
-    @livewireScripts
+    <livewire:scripts />
 </body>
 
 </html>
