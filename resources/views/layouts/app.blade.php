@@ -398,26 +398,29 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item {{ (request()->routeIs('counter')) ? 'bg-dark' : '' }}">
-                        <a class="nav-link {{ (request()->routeIs('counter')) ? 'active' : '' }}" aria-current="counter"
-                            href="/">Counter</a>
-                    </li>
-                    <li class="nav-item {{ (request()->routeIs('calculator')) ? 'bg-dark' : '' }}">
-                        <a class="nav-link {{ (request()->routeIs('calculator')) ? 'active' : '' }}"
-                            href="/calculator">Calculator</a>
-                    </li>
-                </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="">Projects</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link {{ (request()->routeIs('counter')) ? 'active bg-dark' : '' }}"
+                        aria-current="counter" href="/counter">Counter</a>
+                    <a class="nav-link {{ (request()->routeIs('calculator')) ? 'active bg-dark' : '' }}"
+                        href="/calculator">Calculator</a>
+                    <a class="nav-link {{ (request()->routeIs('todo-list')) ? 'active bg-dark' : '' }}"
+                        href="/todo-list">TodoList</a>
+                </div>
             </div>
         </div>
     </nav>
 
-
-
     {{ $slot }}
 
     <livewire:scripts />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
