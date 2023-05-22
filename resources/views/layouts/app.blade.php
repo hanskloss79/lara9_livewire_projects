@@ -410,6 +410,8 @@
                         href="/calculator">Calculator</a>
                     <a class="nav-link {{ (request()->routeIs('todo-list')) ? 'active bg-dark' : '' }}"
                         href="/todo-list">TodoList</a>
+                    <a class="nav-link {{ (request()->routeIs('cascading-dropdown')) ? 'active bg-dark' : '' }}"
+                        href="/cascading-dropdown">CascadingDropdown</a>
                 </div>
             </div>
         </div>
