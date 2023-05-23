@@ -411,7 +411,9 @@
                     <a class="nav-link {{ (request()->routeIs('todo-list')) ? 'active bg-dark' : '' }}"
                         href="/todo-list">TodoList</a>
                     <a class="nav-link {{ (request()->routeIs('cascading-dropdown')) ? 'active bg-dark' : '' }}"
-                        href="/cascading-dropdown">CascadingDropdown</a>
+                        href="/cascading-dropdown">Cascading Dropdown</a>
+                    <a class="nav-link {{ (request()->routeIs('products')) ? 'active bg-dark' : '' }}"
+                        href="/products">Products Search</a>
                 </div>
             </div>
         </div>
