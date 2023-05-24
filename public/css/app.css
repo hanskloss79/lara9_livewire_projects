@@ -3249,11 +3249,23 @@ textarea.form-control-lg {
   font-size: 1.875rem; /* 30px */
   line-height: 2.25rem; /* 36px */
 }
+.w-110 {
+  width: 110px !important;
+}
+.w-150 {
+  width: 150px !important;
+}
 .w-300 {
   width: 300px !important;
 }
 .w-400 {
   width: 400px !important;
+}
+.h-90 {
+  height: 90px !important;
+}
+.h-150 {
+  height: 150px !important;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -3282,4 +3294,7 @@ textarea.form-control-lg {
 }
 .table-auto {
   table-layout: auto;
+}
+.object-cover {
+  object-fit: fill;
 }

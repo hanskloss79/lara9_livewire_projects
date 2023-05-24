@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Livewire Projects</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -403,7 +403,7 @@
                 <span class="">Projects</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav gap-2">
                     <a class="nav-link {{ (request()->routeIs('counter')) ? 'active bg-dark' : '' }}"
                         aria-current="counter" href="/counter">Counter</a>
                     <a class="nav-link {{ (request()->routeIs('calculator')) ? 'active bg-dark' : '' }}"
@@ -414,6 +414,8 @@
                         href="/cascading-dropdown">Cascading Dropdown</a>
                     <a class="nav-link {{ (request()->routeIs('products')) ? 'active bg-dark' : '' }}"
                         href="/products">Products Search</a>
+                    <a class="nav-link {{ (request()->routeIs('image-upload')) ? 'active bg-dark' : '' }}"
+                        href="/image-upload">Image Upload</a>
                 </div>
             </div>
         </div>

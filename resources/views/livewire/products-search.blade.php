@@ -17,12 +17,14 @@
             @foreach ($products as $product)
             <tr>
                 <td class="py-2 px-3 border-bottom border-1">{{$product->id}}</td>
-                <td class="py-2 px-3 border-bottom border-1"><img class="w-6r" src="{{$product->image}}"></td>
+                <td class="py-2 px-3 border-bottom border-1"><img class="w-4r" src="{{$product->image}}"></td>
                 <td class="py-2 px-3 border-bottom border-1">{{$product->title}}</td>
                 <td class="py-2 px-3 border-bottom border-1">{{$product->price}}</td>
             </tr>
             @endforeach
         </tbody>
     </table>
+ 
     {{$products->links()}}
+
 </div>
