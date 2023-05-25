@@ -8,17 +8,17 @@
             @endforeach
         </div>
         @endif
-        <input type="file" wire:model='image' class="mb-3 form-control" multiple>
+        <input type="file" wire:model="image" class="mb-3" multiple>
 
         @error('image') 
-        <span class="error">AleAle{{ $message }}</span>
+        <span class="text-black">AleAle{{ $message }}</span>
         @enderror
 
         <button type="submit" class="btn btn-primary">Wyślij zdjęcie</button>
     </form>
     <div class="d-flex flex-wrap gap-4">
 
-        @foreach($images  as $image)
+        @foreach($images as $image)
             <img src="{{$image}}" class="w-auto h-150 object-cover">
         @endforeach
     </div>

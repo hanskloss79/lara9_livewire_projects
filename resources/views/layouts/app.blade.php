@@ -416,6 +416,8 @@
                         href="/products">Products Search</a>
                     <a class="nav-link {{ (request()->routeIs('image-upload')) ? 'active bg-dark' : '' }}"
                         href="/image-upload">Image Upload</a>
+                    <a class="nav-link {{ (request()->routeIs('register')) ? 'active bg-dark' : '' }}"
+                        href="/register">Registration</a>
                 </div>
             </div>
         </div>
